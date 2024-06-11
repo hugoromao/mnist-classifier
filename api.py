@@ -1,10 +1,7 @@
-import gdown
 import joblib
 import numpy as np
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-
-gdown.download("https://drive.google.com/uc?export=download&id=1RAIMQs5eldGLjGufvN7IOLX4C5ExypX-", "mnist.pkl", quiet=False)
 
 final_model_reloaded = joblib.load("mnist.pkl")
 
